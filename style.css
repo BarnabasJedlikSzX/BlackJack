@@ -3,12 +3,17 @@
     padding: 0;
 }
 
+body {
+    background-color: #A9A9A9;
+}
+
 header {
     background-color: #9E0303;
 }
 
 #logo {
     height: 75px;
+    margin: 5px;
 }
 
 .navbar {
@@ -20,6 +25,36 @@ header {
 }
 
 .navbar li {
-    margin: 25px 10px;
+    margin: 30px 10px;
     font-size: 25px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #000;
+}
+
+article {
+    margin: 45px;
+    padding: 30px;
+    background-color: #006400;
+
+}
+
+#kezdolap {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#jatekmenet {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
 }
