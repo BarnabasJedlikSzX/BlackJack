@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9E0303;
+}
+
+#logo {
+    height: 75px;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.navbar li {
+    margin: 25px 10px;
+    font-size: 25px;
+}
