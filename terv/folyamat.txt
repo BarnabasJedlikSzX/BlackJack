@@ -1,0 +1,9 @@
+-A képernyő jobb felső sarkában a jelenlegi összes pénzünk van kiírva. 200 az alap összeg.
+-A tét a játékos által felrakott pénzt írja ki. Ha nyer a játékos akkor a tét dupláját a program hozzáadja a pénzünkhöz.
+-4 gombbal lehet osztás előtt növelni. Mindegyik annyit ad a téthez és vesz el a pénzünkből amennyi rá van írva, több gombot is meglehet nyomni, a maximum tét 50$.
+-A képernyő bal oldalán 4 gomb található
+--A hit ad még egy lapot, amivel megemeli a kártyák összegét. A játékos addig kérhet lapokat ameddig a lapjai összege meg nem haladja a 21-et.
+--A stand megállítja a lapkérést, megáll az adott kártyáival. 
+--A double kér egy kártyát és megduplázza a tétet. 
+--A split a legbonyolultabb dolog amit csinálhatsz a játékban. Ha két azonos értékű lapod van akkor két kezet csinálhatsz belőlük, mindegyiken azzal a téttel folytatod a játékot amennyi tétet alapból felraktál
+-amikor elfogy az összes pénze a játékosnak akkor meg kell néznie az őszödi beszédet 0.5-ös lassításban
