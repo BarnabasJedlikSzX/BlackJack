@@ -3,3 +3,23 @@
     border-bottom: 3px solid black;
     float: right;
 }
+
+#tet {
+   float: right; 
+}
+
+#gombok {
+    
+}
+
+.sor {
+    display: flex;
+    flex-direction: row;
+}
+
+#lapertek {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
