@@ -1,43 +1,17 @@
-function egy(){
+function emeles(x){
     const tet = document.getElementById('tet')
+    const penz = document.getElementById('penz')
     if (tet.innerText == "?"){
-        tet.innerText = 1
+        tet.innerText = x
     }
-    else{
-        parseInt(tet.innerText)
-        tet.innerText = parseInt(tet.innerText) + 1
+    else{        
+        tet.innerText = parseInt(tet.innerText) + x
     }
+
+    if (parseInt(tet.innerText) > parseInt(penz.innerText)){
+        
+    }
+
 }
 
-function ot(){
-    const tet = document.getElementById('tet')
-    if (tet.innerText == "?"){
-        tet.innerText = 5
-    }
-    else{
-        parseInt(tet.innerText)
-        tet.innerText = parseInt(tet.innerText) + 5
-    }
-}
 
-function tiz(){
-    const tet = document.getElementById('tet')
-    if (tet.innerText == "?"){
-        tet.innerText = 10
-    }
-    else{
-        parseInt(tet.innerText)
-        tet.innerText = parseInt(tet.innerText) + 10
-    }
-}
-
-function huszonot(){
-    const tet = document.getElementById('tet')
-    if (tet.innerText == "?"){
-        tet.innerText = 25
-    }
-    else{
-        parseInt(tet.innerText)
-        tet.innerText = parseInt(tet.innerText) + 25
-    }
-}
