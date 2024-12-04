@@ -9,9 +9,12 @@ function emeles(x){
     }
 
     if (parseInt(tet.innerText) > parseInt(penz.innerText)){
-        
+        alert("Nem emelhetsz többet!")
+        tet.innerText = parseInt(penz.innerText)
     }
 
 }
 
-
+function hit(){
+    
+}
