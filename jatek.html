@@ -18,11 +18,11 @@
     </header>
     <section>
         <div id="penz">
-            <h1>Pénzed: $200</h1>
+            <h1>Pénzed: $<span>200</span></h1>
         </div>
     </section>
     
-    <section>
+    <section id="kartyak">
         <div id="osztolapok">
             <img src="" alt="" id="osztolap1">
             <img src="" alt="" id="osztolap2">
@@ -59,32 +59,23 @@
         </div>
     </section>
 
-    <section id="tet">
-        <div>
-            <h1>Tét: <span id="tet">?</span></h1>
-        </div>
+    <section id="gombok">
+        <h1>Tét: <span id="tet">?</span></h1>
         <div id="zseton">
-            <div class="sor">
-                <img src="zseton/1$.png" alt="" onclick="egy()">
-                <img src="zseton/5$.png" alt="" onclick="ot()">
-            </div>
-            <div class="sor">
-                <img src="zseton/10$.png" alt="" onclick="tiz()">
-                <img src="zseton/25$.png" alt="" onclick="huszonot()">
-            </div>
+            <img src="zseton/1$.png" alt="" onclick="egy()">
+            <img src="zseton/5$.png" alt="" onclick="ot()">
+            <img src="zseton/10$.png" alt="" onclick="tiz()">
+            <img src="zseton/25$.png" alt="" onclick="huszonot()">
+        </div>
+        </div>
+        <div id="actions">
+            <img src="gombok/hit.png" alt="" onclick="hit()">
+            <img src="gombok/stand.png" alt="" onclick="stand()">
+            <img src="gombok/double.png" alt="" onclick="double()">
+            <img src="gombok/split.png" alt="" onclick="split()">
         </div>
     </section>
-    
-    <section id="gombok">
-            <div class="sor">
-                <img src="gombok/hit.png" alt="" onclick="hit()">
-                <img src="gombok/stand.png" alt="" onclick="stand()">
-            </div>
-            <div class="sor">
-                <img src="gombok/double.png" alt="" onclick="double()">
-                <img src="gombok/split.png" alt="" onclick="split()">
-            </div>
-        </section>
+
     <script src="srcipt.js"></script>
 </body>
 </html>
