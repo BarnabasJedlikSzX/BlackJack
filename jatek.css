@@ -1,4 +1,5 @@
-#penz {
+#sajatpenz {
+    display: flex;
     width: 100px;
     border-bottom: 3px solid black;
     float: right;
