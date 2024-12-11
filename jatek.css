@@ -1,5 +1,6 @@
 #sajatpenz {
     display: flex;
+    font-size: 15px;
     width: 100px;
     border-bottom: 3px solid black;
     float: right;
@@ -9,6 +10,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#tetsec {
+    float: right;
+    font-size: 15px;
+    width: 100px;
+    border-bottom: 3px solid black;
 }
 
 #tetel {
