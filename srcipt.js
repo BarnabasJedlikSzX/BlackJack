@@ -5,7 +5,6 @@ const kihuzott = []
 
 function emeles(x){
     const tet = document.getElementById('tet')
-    const penz = document.getElementById('penz')
     if (tet.innerText == "?"){
         tet.innerText = x
     }
@@ -13,9 +12,9 @@ function emeles(x){
         tet.innerText = parseInt(tet.innerText) + x
     }
 
-    if (parseInt(tet.innerText) > parseInt(penz.innerText)){
+    if (parseInt(tet.innerText) > 250){
         alert("Nem emelhetsz többet!")
-        tet.innerText = parseInt(penz.innerText)
+        tet.innerText = 250
     }
 
 }
@@ -35,9 +34,26 @@ function hit(){
  function double(){
      const tet = document.getElementById('tet')
      const penz = document.getElementById('penz')
-     parseInt(tet.innerText) * 2
-     if (parseInt(tet.innerText) > parseInt(penz.innerText)){
-         alert("Nem emelhetsz többet!")
-         tet.innerText = parseInt(penz.innerText)
+     const dupla = parseInt(tet.innerText) * 2
+     if (dupla > parseInt(penz.innerText)){
+         alert("Nincs ennyi pénzed!")
      }
+     else{
+        tet.innerText = dupla
+        document.getElementById('double').style.opacity = 0.5
+     }
+}
+
+function stand(){
+    const tet = document.getElementById('tet')
+    const penz = document.getElementById('penz')
+    if (parseInt(tet.innerText) == 0){
+        alert("Emeld a tétet!")
+    }
+    else{
+        maradek = parseInt(penz.innerText) - parseInt(tet.innerText)
+        penz.innerText = maradek
+        document.getElementById('stand').style.opacity = 0.5
+    }
+
 }
