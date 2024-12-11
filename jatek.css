@@ -11,15 +11,35 @@
     align-items: center;
 }
 
-
-#gombok {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.sor {
+#tetel {
     display: flex;
-    flex-direction: row;
+    float: right;
 }
+
+#tet {
+    margin-left: 10px;
+}
+
+#zseton {
+    display: flex;
+    float: right;
+}
+
+.zsetonok {
+    margin: 10px;
+    
+}
+
+#actions{
+    display: flex;
+}
+
+.buttons {
+    height: 123px;
+    width: 123px;
+    margin-right: 10px;
+}
+
 
 #sajatertek {
     height: 50px;
