@@ -54,6 +54,11 @@ function stand(){
         maradek = parseInt(penz.innerText) - parseInt(tet.innerText)
         penz.innerText = maradek
         document.getElementById('stand').style.opacity = 0.5
+        document.getElementById('hit').style.opacity = 0.5
+        document.getElementById('zseton1').style.opacity = 0.5
+        document.getElementById('zseton5').style.opacity = 0.5
+        document.getElementById('zseton10').style.opacity = 0.5
+        document.getElementById('zseton25').style.opacity = 0.5
     }
 
 }
