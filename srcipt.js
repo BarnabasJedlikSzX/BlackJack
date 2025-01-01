@@ -1,7 +1,6 @@
-const jelek = ["karo", "treff", "pikk", "tök"]
-const szamok = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "B", "D", "K", "A"]
-
-const kihuzott = []
+const kartyak = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, ]
+const jelek = [kor, karo, treff, pikk]
+const szamok = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 function emeles(x){
     const tet = document.getElementById('tet')
@@ -17,17 +16,6 @@ function emeles(x){
         tet.innerText = 250
     }
 
-}
-
-var clicks = 2
-function hit(){
-    clicks += 1
-    console.log(clicks)
-    const jel = jelek[Math.floor(Math.random()*jelek.length)]
-    console.log(jel)
-    const szam = szamok[Math.floor(Math.random()*szamok.length)]
-    console.log(szam)
-    
 }
 
 
@@ -61,4 +49,12 @@ function stand(){
         document.getElementById('zseton25').style.opacity = 0.5
     }
 
+}
+
+function hit(){
+    clicks = 1
+    while (clicks > 11)
+        clicks += 1
+    jel = Math.floor(Math.random() * 4)
+    szam = Math.floor(Math.random() * 13)
 }
