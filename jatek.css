@@ -138,6 +138,15 @@
     height: 200px;
 }
 
+#sajatlapok{
+    display: flex;  
+    align-items: center;
+}
+
+#sajatlap1{
+    margin-right: 20px;
+}
+
 #sajatlap3{
     display: none;
 }
