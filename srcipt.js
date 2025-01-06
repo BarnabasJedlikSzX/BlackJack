@@ -1,5 +1,5 @@
 const kartyak = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, ]
-const jelek = [kor, karo, treff, pikk]
+const jelek = ["kor", "karo", "treff", "pikk"]
 const szamok = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 function emeles(x){
@@ -52,9 +52,13 @@ function stand(){
 }
 
 function hit(){
-    clicks = 1
-    while (clicks > 11)
+    clicks = 0
+    if (clicks < 10)
         clicks += 1
+    console.log(clicks)
     jel = Math.floor(Math.random() * 4)
     szam = Math.floor(Math.random() * 13)
+    if (clicks == 1){
+        document.getElementById('sajatlap1').style.display = "block"
+    }
 }
