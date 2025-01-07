@@ -76,17 +76,20 @@
 }
 
 .card {
-    display: flex;
+    position: relative;
     height: 300px;
     width: 200px;
-    border: 5px solid black;
-    border-radius: 25px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
-#balfelso img, #jobbalso img{
-    height: 100px;
-    height: 100px;
+#balfelso img #jobbalso img{
+    width: 20px; /* Szimbólum mérete */
+    height: 20px;
+    margin: 5px 0;
 }
 
 #jobbfelso, #balalso{
@@ -103,36 +106,39 @@
     rotate: 180deg;
 }
 
-#jobbalso{
+#balfelso, #jobbalso {
+    position: absolute;
     display: flex;
-    justify-content: end;
-    align-items: end;
-    height: 100px;
-}
-
-.felso{
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-}
-
-.also{
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    height: 100px;
-}
-
-#kep{
-    display: flex;
-    height: 200px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-#kep img{
-    width: 200px;
-    height: 200px;
+#balfelso {
+    top: 10px;
+    left: 10px;
+    text-align: center;
+}
+
+#jobbfelso1, #jobbfelso2, #jobbfelso3, #jobbfelso4, #jobbfelso5, #jobbfelso6, #jobbfelso7, #jobbfelso8, #jobbfelso9, #jobbfelso10, #jobbfelso11 {
+    margin-left: 140px;
+    font-size: 60px;
+}
+
+#balalso1, #balalso2, #balalso3, #balalso4, #balalso5, #balalso6, #balalso7, #balalso8, #balalso9, #balalso10, #balalso11 {
+    margin-top: 160px;
+    margin-right: 140px;
+    font-size: 60px;
+    transform: rotate(180deg);
+}
+
+
+#jobbalso {
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    transform: rotate(180deg);
 }
 
 #sajatlapok{
