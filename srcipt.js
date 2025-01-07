@@ -1,4 +1,3 @@
-const kartyak = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, ]
 const jelek = ["kor", "karo", "treff", "pikk"]
 const szamok = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
@@ -51,6 +50,40 @@ function stand(){
 
 }
 
+function ertek(){
+
+}
+
+function numbers(number){
+    if (number == 0)
+        return "2"
+    else if (number == 1)
+        return "3"
+    else if (number == 2)
+        return "4"
+    else if (number == 3)
+        return "5"
+    else if (number == 4)
+        return "6"
+    else if (number == 5)
+        return "7"
+    else if (number == 6)
+        return "8"
+    else if (number == 7)
+        return "9"
+    else if (number == 8)
+        return "10"
+    else if (number == 9)
+        return "J"
+    else if (number == 10)
+        return "Q"
+    else if (number == 11)
+        return "K"
+    else if (number == 12)
+        return "A"
+}
+
+let ossz = 0
 let clicks = 0
 function hit(){
     console.log(clicks)
@@ -61,21 +94,20 @@ function hit(){
         jel1 = Math.floor(Math.random() * 4)
         szam1 = Math.floor(Math.random() * 13)
 
-        
-
         document.getElementById('jobbalsokep1').src = "jelek/" + jelek[jel1] + ".png"
         document.getElementById('balfelsokep1').src = "jelek/" + jelek[jel1] + ".png"      
-        document.getElementById('jobbfelso1').innerHTML = "<p>" + szamok[szam1] + "</p>"
-        document.getElementById('balalso1').innerHTML = "<p>" + szamok[szam1] + "</p>"
+        document.getElementById('jobbfelso1').innerHTML = "<p>" + numbers(szam1) + "</p>"
+        document.getElementById('balalso1').innerHTML = "<p>" + numbers(szam1) + "</p>"
         
         document.getElementById('sajatlap2').style.display = "block"
         jel2 = Math.floor(Math.random() * 4)
         szam2 = Math.floor(Math.random() * 13)
+        
 
         document.getElementById('jobbalsokep2').src = "jelek/" + jelek[jel2] + ".png"
         document.getElementById('balfelsokep2').src = "jelek/" + jelek[jel2] + ".png"
-        document.getElementById('jobbfelso2').innerHTML = "<p>" + szamok[szam2] + "</p>"
-        document.getElementById('balalso2').innerHTML = "<p>" + szamok[szam2] + "</p>"
+        document.getElementById('jobbfelso2').innerHTML = "<p>" + numbers(szam2) + "</p>"
+        document.getElementById('balalso2').innerHTML = "<p>" + numbers(szam2) + "</p>"
     }
     else if (clicks == 2){
         document.getElementById('sajatlap3').style.display = "block"
@@ -84,8 +116,8 @@ function hit(){
 
         document.getElementById('jobbalsokep3').src = "jelek/" + jelek[jel3] + ".png"
         document.getElementById('balfelsokep3').src = "jelek/" + jelek[jel3] + ".png"
-        document.getElementById('jobbfelso3').innerHTML = "<p>" + szamok[szam3] + "</p>"
-        document.getElementById('balalso3').innerHTML = "<p>" + szamok[szam3] + "</p>"
+        document.getElementById('jobbfelso3').innerHTML = "<p>" + numbers(szam3) + "</p>"
+        document.getElementById('balalso3').innerHTML = "<p>" + numbers(szam3) + "</p>"
     }
     else if (clicks == 3){
         document.getElementById('sajatlap4').style.display = "block"
@@ -94,8 +126,8 @@ function hit(){
 
         document.getElementById('jobbalsokep4').src = "jelek/" + jelek[jel4] + ".png"
         document.getElementById('balfelsokep4').src = "jelek/" + jelek[jel4] + ".png"
-        document.getElementById('jobbfelso4').innerHTML = "<p>" + szamok[szam4] + "</p>"
-        document.getElementById('balalso4').innerHTML = "<p>" + szamok[szam4] + "</p>"
+        document.getElementById('jobbfelso4').innerHTML = "<p>" + numbers(szam4) + "</p>"
+        document.getElementById('balalso4').innerHTML = "<p>" + numbers(szam4) + "</p>"
     }
     else if (clicks == 4){
         document.getElementById('sajatlap5').style.display = "block"
@@ -104,8 +136,8 @@ function hit(){
 
         document.getElementById('jobbalsokep5').src = "jelek/" + jelek[jel5] + ".png"
         document.getElementById('balfelsokep5').src = "jelek/" + jelek[jel5] + ".png"
-        document.getElementById('jobbfelso5').innerHTML = "<p>" + szamok[szam5] + "</p>"
-        document.getElementById('balalso5').innerHTML = "<p>" + szamok[szam5] + "</p>"
+        document.getElementById('jobbfelso5').innerHTML = "<p>" + numbers(szam5) + "</p>"
+        document.getElementById('balalso5').innerHTML = "<p>" + numbers(szam5) + "</p>"
     }
     else if (clicks == 5){
         document.getElementById('sajatlap6').style.display = "block"
@@ -114,8 +146,8 @@ function hit(){
 
         document.getElementById('jobbalsokep6').src = "jelek/" + jelek[jel6] + ".png"
         document.getElementById('balfelsokep6').src = "jelek/" + jelek[jel6] + ".png"
-        document.getElementById('jobbfelso6').innerHTML = "<p>" + szamok[szam6] + "</p>"
-        document.getElementById('balalso6').innerHTML = "<p>" + szamok[szam6] + "</p>"
+        document.getElementById('jobbfelso6').innerHTML = "<p>" + numbers(szam6) + "</p>"
+        document.getElementById('balalso6').innerHTML = "<p>" + numbers(szam6) + "</p>"
     }
     else if (clicks == 6){
         document.getElementById('sajatlap7').style.display = "block"
@@ -124,8 +156,8 @@ function hit(){
 
         document.getElementById('jobbalsokep7').src = "jelek/" + jelek[jel7] + ".png"
         document.getElementById('balfelsokep7').src = "jelek/" + jelek[jel7] + ".png"
-        document.getElementById('jobbfelso7').innerHTML = "<p>" + szamok[szam7] + "</p>"
-        document.getElementById('balalso7').innerHTML = "<p>" + szamok[szam7] + "</p>"
+        document.getElementById('jobbfelso7').innerHTML = "<p>" + numbers(szam7) + "</p>"
+        document.getElementById('balalso7').innerHTML = "<p>" + numbers(szam7) + "</p>"
     }
     else if (clicks == 7){
         document.getElementById('sajatlap8').style.display = "block"
@@ -134,8 +166,8 @@ function hit(){
 
         document.getElementById('jobbalsokep8').src = "jelek/" + jelek[jel8] + ".png"
         document.getElementById('balfelsokep8').src = "jelek/" + jelek[jel8] + ".png"
-        document.getElementById('jobbfelso8').innerHTML = "<p>" + szamok[szam8] + "</p>"
-        document.getElementById('balalso8').innerHTML = "<p>" + szamok[szam8] + "</p>"
+        document.getElementById('jobbfelso8').innerHTML = "<p>" + numbers(szam8) + "</p>"
+        document.getElementById('balalso8').innerHTML = "<p>" + numbers(szam8) + "</p>"
     }
     else if (clicks == 8){
         document.getElementById('sajatlap9').style.display = "block"
@@ -144,8 +176,8 @@ function hit(){
 
         document.getElementById('jobbalsokep9').src = "jelek/" + jelek[jel9] + ".png"
         document.getElementById('balfelsokep9').src = "jelek/" + jelek[jel9] + ".png"
-        document.getElementById('jobbfelso9').innerHTML = "<p>" + szamok[szam9] + "</p>"
-        document.getElementById('balalso9').innerHTML = "<p>" + szamok[szam9] + "</p>"
+        document.getElementById('jobbfelso9').innerHTML = "<p>" + numbers(szam9) + "</p>"
+        document.getElementById('balalso9').innerHTML = "<p>" + numbers(szam9) + "</p>"
     }
     else if (clicks == 9){
         document.getElementById('sajatlap10').style.display = "block"
@@ -154,8 +186,8 @@ function hit(){
 
         document.getElementById('jobbalsokep10').src = "jelek/" + jelek[jel10] + ".png"
         document.getElementById('balfelsokep10').src = "jelek/" + jelek[jel10] + ".png"
-        document.getElementById('jobbfelso10').innerHTML = "<p>" + szamok[szam10] + "</p>"
-        document.getElementById('balalso10').innerHTML = "<p>" + szamok[szam10] + "</p>"
+        document.getElementById('jobbfelso10').innerHTML = "<p>" + numbers(szam10) + "</p>"
+        document.getElementById('balalso10').innerHTML = "<p>" + numbers(szam10) + "</p>"
     }
     else if (clicks == 10){
         document.getElementById('sajatlap11').style.display = "block"
@@ -164,8 +196,8 @@ function hit(){
 
         document.getElementById('jobbalsokep11').src = "jelek/" + jelek[jel11] + ".png"
         document.getElementById('balfelsokep11').src = "jelek/" + jelek[jel11] + ".png"
-        document.getElementById('jobbfelso11').innerHTML = "<p>" + szamok[szam11] + "</p>"
-        document.getElementById('balalso11').innerHTML = "<p>" + szamok[szam11] + "</p>"
+        document.getElementById('jobbfelso11').innerHTML = "<p>" + numbers(szam11) + "</p>"
+        document.getElementById('balalso11').innerHTML = "<p>" + numbers(szam11) + "</p>"
     }
 
 }
