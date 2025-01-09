@@ -32,7 +32,7 @@ function emeles(x){
 }
 
 function ellenorzes(oszto, sajat){
-    if (oszto > 16 || oszto > sajat){
+    if (oszto > 16 && oszto > sajat){
         alert("Veszítettél!")
         levonas = parseInt(document.getElementById('tet').innerText)
         meow = parseInt(document.getElementById('penz').innerText)
@@ -48,11 +48,58 @@ function ellenorzes(oszto, sajat){
         document.getElementById('sajatlap9').style.display = "none"
         document.getElementById('sajatlap10').style.display = "none"
         document.getElementById('sajatlap11').style.display = "none"
+        document.getElementById('osztoszam').innerText = "??"
+        document.getElementById('osztolap1').style.display = "none"
+        document.getElementById('osztolap2').style.display = "none"
+        document.getElementById('osztolap3').style.display = "none"
+        document.getElementById('osztolap4').style.display = "none"
+        document.getElementById('osztolap5').style.display = "none"
+        document.getElementById('osztolap6').style.display = "none"
+        document.getElementById('osztolap7').style.display = "none"
+        document.getElementById('osztolap8').style.display = "none"
+        document.getElementById('osztolap9').style.display = "none"
+        document.getElementById('osztolap10').style.display = "none"
+        document.getElementById('osztolap11').style.display = "none"
         document.getElementById('sajatszam').innerText = "??"
         document.getElementById('tet').innerText = "?"
         ossz = 0
         osztoossz = 0
     }
+
+    else if (oszto > 16 && sajat>oszto){
+        alert("Nyertél!")
+        meow = parseInt(document.getElementById('penz').innerText)
+        nyeremeny = parseInt(document.getElementById('tet').innerText)*2
+        document.getElementById('penz').innerText = meow + nyeremeny
+        document.getElementById('sajatlap1').style.display = "none"
+        document.getElementById('sajatlap2').style.display = "none"
+        document.getElementById('sajatlap3').style.display = "none"
+        document.getElementById('sajatlap4').style.display = "none"
+        document.getElementById('sajatlap5').style.display = "none"
+        document.getElementById('sajatlap6').style.display = "none"
+        document.getElementById('sajatlap7').style.display = "none"
+        document.getElementById('sajatlap8').style.display = "none"
+        document.getElementById('sajatlap9').style.display = "none"
+        document.getElementById('sajatlap10').style.display = "none"
+        document.getElementById('sajatlap11').style.display = "none"
+        document.getElementById('sajatszam').innerText = "??"
+        document.getElementById('tet').innerText = "?"
+        ossz = 0
+        osztoossz = 0
+        document.getElementById('osztoszam').innerText = "??"
+        document.getElementById('osztolap1').style.display = "none"
+        document.getElementById('osztolap2').style.display = "none"
+        document.getElementById('osztolap3').style.display = "none"
+        document.getElementById('osztolap4').style.display = "none"
+        document.getElementById('osztolap5').style.display = "none"
+        document.getElementById('osztolap6').style.display = "none"
+        document.getElementById('osztolap7').style.display = "none"
+        document.getElementById('osztolap8').style.display = "none"
+        document.getElementById('osztolap9').style.display = "none"
+        document.getElementById('osztolap10').style.display = "none"
+        document.getElementById('osztolap11').style.display = "none"
+    }
+
     else if (oszto == sajat){
         alert("Döntetlen!")
         meow = parseInt(document.getElementById('penz').innerText)
@@ -73,6 +120,51 @@ function ellenorzes(oszto, sajat){
         document.getElementById('tet').innerText = "?"
         ossz = 0
         osztoossz = 0
+        document.getElementById('osztoszam').innerText = "??"
+        document.getElementById('osztolap1').style.display = "none"
+        document.getElementById('osztolap2').style.display = "none"
+        document.getElementById('osztolap3').style.display = "none"
+        document.getElementById('osztolap4').style.display = "none"
+        document.getElementById('osztolap5').style.display = "none"
+        document.getElementById('osztolap6').style.display = "none"
+        document.getElementById('osztolap7').style.display = "none"
+        document.getElementById('osztolap8').style.display = "none"
+        document.getElementById('osztolap9').style.display = "none"
+        document.getElementById('osztolap10').style.display = "none"
+        document.getElementById('osztolap11').style.display = "none"
+    }
+    else if (oszto >21){
+        alert("Nyertél!")
+        meow = parseInt(document.getElementById('penz').innerText)
+        nyeremeny = parseInt(document.getElementById('tet').innerText)*2
+        document.getElementById('penz').innerText = meow + nyeremeny
+        document.getElementById('sajatlap1').style.display = "none"
+        document.getElementById('sajatlap2').style.display = "none"
+        document.getElementById('sajatlap3').style.display = "none"
+        document.getElementById('sajatlap4').style.display = "none"
+        document.getElementById('sajatlap5').style.display = "none"
+        document.getElementById('sajatlap6').style.display = "none"
+        document.getElementById('sajatlap7').style.display = "none"
+        document.getElementById('sajatlap8').style.display = "none"
+        document.getElementById('sajatlap9').style.display = "none"
+        document.getElementById('sajatlap10').style.display = "none"
+        document.getElementById('sajatlap11').style.display = "none"
+        document.getElementById('sajatszam').innerText = "??"
+        document.getElementById('tet').innerText = "?"
+        ossz = 0
+        osztoossz = 0
+        document.getElementById('osztoszam').innerText = "??"
+        document.getElementById('osztolap1').style.display = "none"
+        document.getElementById('osztolap2').style.display = "none"
+        document.getElementById('osztolap3').style.display = "none"
+        document.getElementById('osztolap4').style.display = "none"
+        document.getElementById('osztolap5').style.display = "none"
+        document.getElementById('osztolap6').style.display = "none"
+        document.getElementById('osztolap7').style.display = "none"
+        document.getElementById('osztolap8').style.display = "none"
+        document.getElementById('osztolap9').style.display = "none"
+        document.getElementById('osztolap10').style.display = "none"
+        document.getElementById('osztolap11').style.display = "none"
     }
     else{
         alert("Nyertél!")
