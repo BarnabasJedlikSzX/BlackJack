@@ -121,12 +121,12 @@
     text-align: center;
 }
 
-#jobbfelso1, #jobbfelso2, #jobbfelso3, #jobbfelso4, #jobbfelso5, #jobbfelso6, #jobbfelso7, #jobbfelso8, #jobbfelso9, #jobbfelso10, #jobbfelso11 {
+#jobbfelso1, #jobbfelso2, #jobbfelso3, #jobbfelso4, #jobbfelso5, #jobbfelso6, #jobbfelso7, #jobbfelso8, #jobbfelso9, #jobbfelso10, #jobbfelso11, #jobbfelso12, #jobbfelso13, #jobbfelso14, #jobbfelso15, #jobbfelso16, #jobbfelso17, #jobbfelso18, #jobbfelso19, #jobbfelso20, #jobbfelso21, #jobbfelso22{
     margin-left: 140px;
     font-size: 60px;
 }
 
-#balalso1, #balalso2, #balalso3, #balalso4, #balalso5, #balalso6, #balalso7, #balalso8, #balalso9, #balalso10, #balalso11 {
+#balalso1, #balalso2, #balalso3, #balalso4, #balalso5, #balalso6, #balalso7, #balalso8, #balalso9, #balalso10, #balalso11, #balalso12, #balalso13, #balalso14, #balalso15, #balalso16, #balalso17, #balalso18, #balalso19, #balalso20, #balalso21, #balalso22{
     margin-top: 160px;
     margin-right: 140px;
     font-size: 60px;
@@ -154,13 +154,13 @@
 }
 
 #sajatlap1{
-    display: flex;
+    display: none;
     margin-right: 20px;
     background-color: white;
 }
 
 #sajatlap2{
-    display: flex;
+    display: none;
     margin-right: 20px;
     background-color: white;
 }
@@ -220,13 +220,13 @@
 }
 
 #osztolap1{
-    display: flex;
+    display: none;
     margin-right: 20px;
     background-color: white;
 }
 
 #osztolap2{
-    display: flex;
+    display: none;
     margin-right: 20px;
     background-color: white;
 }
