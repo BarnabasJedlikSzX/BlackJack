@@ -589,3 +589,30 @@ function hit(){
         bust(ossz11)
     }
 }
+
+
+function cardHit() {
+    const sajatlap1 = document.getElementById('sajatlap1');
+    const sajatlap2 = document.getElementById('sajatlap2');
+    const sajatlap3 = document.getElementById('sajatlap3');
+    const sajatlap4 = document.getElementById('sajatlap4');
+    const sajatlap5 = document.getElementById('sajatlap5');
+    const sajatlap6 = document.getElementById('sajatlap6');
+    const sajatlap7 = document.getElementById('sajatlap7');
+    const sajatlap8 = document.getElementById('sajatlap8');
+    const sajatlap9 = document.getElementById('sajatlap9');
+    const sajatlap10 = document.getElementById('sajatlap10');
+    const sajatlap11 = document.getElementById('sajatlap11');
+
+    sajatlap1.classList.add('active');
+    sajatlap2.classList.add('active');
+    sajatlap3.classList.add('active');
+    sajatlap4.classList.add('active');
+    sajatlap5.classList.add('active');
+    sajatlap6.classList.add('active');
+    sajatlap7.classList.add('active');
+    sajatlap8.classList.add('active');
+    sajatlap9.classList.add('active');
+    sajatlap10.classList.add('active');
+    sajatlap11.classList.add('active');
+}

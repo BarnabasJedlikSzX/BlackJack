@@ -35,7 +35,7 @@
 
 .zsetonok {
     margin: 10px;
-    
+    cursor: pointer;
 }
 
 #actions{
@@ -46,6 +46,7 @@
     height: 123px;
     width: 123px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 
@@ -83,6 +84,12 @@
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.card.active {
+    opacity: 1;
 }
 
 
